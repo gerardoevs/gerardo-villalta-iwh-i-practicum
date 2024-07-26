@@ -6,7 +6,25 @@ body, * {
     padding: 0;
 }
 
+.button{
+    display: block;
+    margin: 0.5em 0;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(4, 45, 224);
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
 .table {
+    border: 1px solid black;
+}
+
+.table tr{
+    border-bottom: 1px solid black;
 }
 
 .table tr th{
@@ -17,4 +35,32 @@ body, * {
 
 table tr td{
     padding: 0.5em 1em;
+}
+
+
+.form-wrapper {
+    font-size: 18px;
+    max-width: 768px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: solid 1px lightgrey;
+    border-radius: 15px;
+    box-shadow: 3px 2px 6px lightgrey;
+}
+
+label, input {
+    margin-top: 5px;
+    display: block;
+    font-size: inherit;
+}
+
+input[type="text"] {
+    padding: .25rem;
+}
+
+input[type="submit"] {
+    background-color: lightgrey;
+    border: none;
+    padding: .375rem 1rem;
+    margin-top: 10px;
 }
