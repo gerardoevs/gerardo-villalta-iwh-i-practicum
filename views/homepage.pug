@@ -6,17 +6,18 @@ html
         title= `${title}`
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet", href="/css/style.css")
-    body    
-        h1 Videogames
+    body
+        .container    
+            h1 Videogames
 
-        a(href="/update-cobj").button Add to this table 
-        table.table
-            tr 
-                th Name
-                th Genre
-                th Console
-            each videogame in data
+            a(href="/update-cobj").button + Add to this table 
+            table.table
                 tr 
-                    td #{videogame.properties.name}
-                    td #{videogame.properties.genre}
-                    td #{videogame.properties.console}
+                    th Name
+                    th Genre
+                    th Console
+                each videogame in data
+                    tr 
+                        td #{videogame.properties.name}
+                        td #{videogame.properties.genre}
+                        td #{videogame.properties.console}
